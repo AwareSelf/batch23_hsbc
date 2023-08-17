@@ -1,0 +1,21 @@
+package classesobjects;
+
+public class Emp {
+	
+	private int empId;
+	private String empName;
+	private double empSal;
+	
+	/*
+	 * public Emp() { System.out.println("Emp 0 arg constructor called"); }
+	 */
+	
+	//String representation of your object
+	public String toString()
+	{
+		return empId+","+empName+","+empSal;
+	}
+	
+	
+
+}

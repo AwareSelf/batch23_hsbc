@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+C:\hsbc_training_java\hsbc_java\.metadata\.plugins\org.eclipse.jdt.core
+2848129260.index
+2236427911.index

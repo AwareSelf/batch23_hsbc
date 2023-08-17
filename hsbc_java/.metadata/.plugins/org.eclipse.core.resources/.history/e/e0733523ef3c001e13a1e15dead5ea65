@@ -1,0 +1,19 @@
+package classesobjects;
+
+public class MainApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Emp e;  //declaring a reference
+		e = new Emp(); //creating a object
+		
+		
+		System.out.println(e);
+		
+	//	Emp e1 = new Emp(1,"Ram",1600);
+		
+
+	}
+
+}
