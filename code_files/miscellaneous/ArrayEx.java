@@ -79,6 +79,17 @@ public class ArrayEx {
 		}
 		
 	
+		int[][] arrint = new int[3][3];
+		
+		for(int i=0;i< arrint.length;i++)
+		{
+			for(int j=0;j< arrint[i].length;j++)
+			{
+				arrint[i][j] = 4;
+			}
+		}
+		
+		
 	}
 
 }
