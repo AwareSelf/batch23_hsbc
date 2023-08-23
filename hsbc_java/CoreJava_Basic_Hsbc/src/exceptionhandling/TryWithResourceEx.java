@@ -2,7 +2,7 @@ package exceptionhandling;
 
 import java.io.*;
 
-public class Exception1 {
+public class TryWithResourceEx {
 
 	public static void main(String[] args) {
 		
@@ -17,11 +17,14 @@ public class Exception1 {
 	
 	char func()
 	{
-		FileReader fr = null;
-		try
+		 //try with resource block
+		//FileReader will auto close when try block ends
+		//As FileReader class implements AutoCloseable interface so 
+		//it can be auto-closed in try-with-resource block
+		try(FileReader fr = new FileReader("C://tempp//abc.txt");)
 		{
 		
-		 fr = new FileReader("C://tempp//abc.txt");
+		
 		int b = fr.read();
 		System.out.println((char)b);
 		return ((char)b);
@@ -51,21 +54,6 @@ public class Exception1 {
 		catch(IOException ex)
 		{
 			ex.printStackTrace();
-		}
-		finally
-		{
-			System.out.println("finally block to close file resource..");
-			if(fr!=null)
-			{
-				try
-				{
-				  fr.close();
-				}
-				catch(IOException e)
-				{
-					e.printStackTrace();
-				}
-			}
 		}
 
 		
