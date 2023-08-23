@@ -8,6 +8,10 @@ public class InsufficientBalance extends Exception{
 	
 	public InsufficientBalance(double bal,double amt,int acctid)
 	{
+		super("Insufficient balance for acctid="+acctid+
+				  ".bal ="+bal +
+				  ",amt ="+ amt);
+		
 		
 		System.out.println("User-defined exception InsufficientBalance constructor called..");
 		this.acctid = acctid;

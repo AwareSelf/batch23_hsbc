@@ -35,7 +35,8 @@ public class MainApp {
 		   }
 		   catch(InsufficientBalance ex)
 		   {
-			   System.out.println(ex);
+			  System.out.println(ex.getMessage());
+			  System.out.println(ex);
 			   break;
 		   }
 		   System.out.println("balance after withdrawing the amount:"+ ob.getBal());
