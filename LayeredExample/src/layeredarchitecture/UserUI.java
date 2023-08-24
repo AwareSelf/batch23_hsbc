@@ -16,11 +16,11 @@ public class UserUI {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		StorageFactory sf = new StorageFactory();
+		
 	//	EmpDaoIntf impl = sf.getStorage(1);
 	//	UserUI ob = new UserUI(impl);
 		
-		UserUI ob = new UserUI(sf.getStorage(1));
+		UserUI ob = new UserUI(StorageFactory.getStorage(1));
 		ob.acceptEmpDetailsAndStore();
 		
 		Scanner sc = new Scanner(System.in);
