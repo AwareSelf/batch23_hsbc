@@ -1,0 +1,40 @@
+create table dept
+(deptno int primary key,
+ dname varchar(50)
+ );
+ 
+create table emp 
+( empid int primary key,
+  empname varchar(50),
+  deptno int references dept(deptno)
+  );
+
+ insert into dept values(10,'Account');
+  insert into dept values(20,'Hr');
+  
+  insert into emp values(1,'Ram',10);
+  insert into emp values(2,'Shyam',20);
+
+
+inner join
+
+select emp.empid,emp.empname,dept.deptno,dept.dname
+from emp,dept
+where emp.deptno = dept.deptno;
+
+outer join
+SELECT column_name(s)
+FROM table1
+LEFT JOIN table2
+ON table1.column_name = table2.column_name;
+
+select emp.empid,emp.empname,dept.deptno,dept.dname
+from emp
+left join dept
+on emp.deptno = dept.deptno
+
+select emp.empid,emp.empname,dept.deptno,dept.dname
+from emp
+right join dept
+on emp.deptno = dept.deptno;
+
