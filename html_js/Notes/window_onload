@@ -1,0 +1,25 @@
+JavaScript onload
+In JavaScript, this event can apply to launch a particular function when the page 
+is fully displayed. 
+It can also be used to verify the type and version of the visitor's browser. 
+
+We can check what cookies a page uses by using the onload attribute.
+
+In HTML, the onload attribute fires when an object has been loaded. 
+The purpose of this attribute is to execute a script when the associated element 
+loads.
+
+In HTML, the onload attribute is generally used with the <body> element to execute
+ a script once the content (including CSS files, images, scripts, etc.) of the 
+ webpage is completely loaded. 
+ It is not necessary to use it only with <body> tag, as it can be used with 
+ other HTML elements.
+
+The difference between the document.onload and window.onload is: 
+document.onload triggers before the loading of images and other external content.
+It is fired before the window.onload. 
+While the window.onload triggers when the entire page loads, including CSS files, 
+script files, images, etc.
+
+Syntax
+window.onload = fun()  

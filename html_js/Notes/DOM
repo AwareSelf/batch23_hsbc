@@ -1,0 +1,41 @@
+Document Object Model
+
+The document object represents the whole html document.
+
+When html document is loaded in the browser, it becomes a document object. 
+It is the root element that represents the html document. It has properties and methods. 
+By the help of document object, we can add dynamic content to our web page.
+
+As mentioned earlier, it is the object of window. So window.document Is same as document  
+
+According to W3C - "The W3C Document Object Model (DOM) is a platform and language-neutral interface 
+that allows programs and scripts to dynamically access and update the content, structure, and style of a document."
+
+Properties of Document Object:-
+see - dom_properties image (copied in webapp folder):-
+Let's see the properties of document object that can be accessed and modified by the document object
+
+Methods of document object:-
+We can access and change the contents of document by its methods.
+
+The important methods of document object are as follows:-
+
+Method	Description
+write("string")	writes the given string on the doucment.
+writeln("string")	writes the given string on the doucment with newline character at the end.
+getElementById()	returns the element having the given id value.
+getElementsByName()	returns all the elements having the given name value.
+getElementsByTagName()	returns all the elements having the given tag name.
+getElementsByClassName()	returns all the elements having the given class name.
+
+Accessing field value by document object:-
+In this example, we are going to get the value of input text by user. 
+Here, we are using document.form1.name.value to get the value of name field.
+
+Here, document is the root element that represents the html document.
+
+form1 is the name of the form.
+
+name is the attribute name of the input text.
+
+value is the property, that returns the value of the input text.
