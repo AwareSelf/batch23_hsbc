@@ -1,0 +1,33 @@
+<html>  
+<head>  
+<title>dropdown menu using select tab</title>  
+</head>  
+<script>  
+function favTutorial() {  
+var mylist = document.getElementById("myList");  
+
+//get the choice selected by user from the dropdown
+var choice = mylist.options[mylist.selectedIndex].text;
+
+alert(choice);  
+
+//show selected choice in textbox
+document.getElementById("favourite").value = choice;
+}  
+</script>  
+  
+<body>  
+<form>  
+<b> Select you favourite food item using dropdown list </b>  
+<select id = "myList" onchange = "favTutorial()" >  
+<option> ---Choose tutorial--- </option>  
+<option> idlidosa </option>  
+<option> pavbhaji </option>  
+<option> pizza </option>  
+<option> sandwitch </option>  
+</select>  
+<p> Your selected favourite food item site is:   </p>
+<input type = "text" id = "favourite" size = "20" />
+</form>  
+</body>  
+</html>  

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1"/>
+<title>Hi Everyone!!</title>
+
+
+<script type="text/javascript">
+
+  function func()
+  {
+   
+    alert("Welcome to HSBC Software!");
+   
+  }
+  
+ 
+</script>
+
+<body>
+
+<div>
+<button id="b1">GreetAll</button>
+<button onclick="removeGreeting()">Stop Greeting!</button>
+
+</div>
+
+<script type="text/javascript">
+
+
+ var h = document.getElementById("b1");
+ h.addEventListener("click",func);
+ 
+ function removeGreeting()
+ {
+    h.removeEventListener("click",func);
+ }
+
+  
+</script>
+</body>
+</html>

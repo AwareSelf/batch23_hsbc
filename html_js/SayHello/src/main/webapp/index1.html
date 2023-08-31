@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Addition of 2 nos</title>
+<script type="text/javascript">
+
+
+  function func1()
+  {
+    // alert("Welcome to HSBC Software");
+
+   //set the Textfield value
+   //  document.getElementById("no1").value =100; 
+   
+   //get the Textfield value
+      var no1 = document.getElementById("no1").value;
+      
+      no1 = parseInt(no1);
+      
+      var no2 = document.getElementById("no2").value;
+      
+      no2 = parseInt(no2);
+      var sum = no1+no2;
+      alert("result of addition of "+no1+" and "+no2+" is "+sum);
+  }
+</script>
+  
+</head>
+<body>
+
+<div>
+<input type="text" value="10" id="no1" />
+<input  type="text"  value="20" id="no2" />
+ <button onclick="func1()">Click me!</button>
+</div>
+
+</body>
+</html>

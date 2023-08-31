@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#contentTable, th, td{
+border : solid 1px black;
+}
+</style>
+</head>
+<body>
+<h2>Ajax Example with Servlet</h2>
+ 
+<button onclick="callAjax();">Get Data</button>
+<br/><br/>
+ 
+ 
+<p id="demo">
+</p>
+<div id="loading"></div>
+ 
+<script type="text/javascript">
+function callAjax() {
+ 
+document.getElementById('loading').innerHTML = "Loading Data...";
+ 
+httpRequest = new XMLHttpRequest();
+ 
+if (!httpRequest) {
+console.log('Unable to create XMLHTTP instance');
+return false;
+}
+httpRequest.open('GET', 'EmpServlet?empid=1&empname=namrata&empsalary=10000');
+httpRequest.responseType = 'text';
+httpRequest.send();
+httpRequest.onreadystatechange = function() {
+if (httpRequest.readyState === XMLHttpRequest.DONE) {
+ 
+document.getElementById('loading').innerHTML = "";
+ 
+if (httpRequest.status === 200) {
+ 
+var data = httpRequest.response;
+document.getElementById("demo").innerHTML = data;
+
+} else {
+console.log('Something went wrong..!!');
+}
+}
+}
+}
+</script>
+</body>
+</html>

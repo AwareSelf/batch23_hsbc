@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>innerHtml & innerText</title>
+</head>
+<body>
+
+<div id="div1">
+   <p> Hi all of you </p>
+   <input type="button" value="click me" onclick="func()"/>
+</div>
+ 
+<hr>
+     <input type="button" value="click me, am outside div" onclick="func()"/>
+
+
+<script type="text/javascript">
+  
+    var t1 = document.getElementById("div1").innerHTML;
+    var t2= document.getElementById("div1").innerText;
+    
+    console.log("accessing innerHTML property of div"+t1);
+    console.log("accessing innerText property of div"+t2);
+</script>
+
+<script type="text/javascript">
+ function func()
+  {
+     document.getElementById("div1").innerHTML = "<h2> Hi all of you </h2>";
+  }
+    
+</script>
+</body>
+</html>
