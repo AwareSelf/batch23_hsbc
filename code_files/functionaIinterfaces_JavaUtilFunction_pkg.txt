@@ -1,0 +1,19 @@
+
+java.util.function --> package
+Functional Interfaces --> each of these can be implemented using lambda function
+
+1) Consumer functional interface
+    
+    void accept(1 arg) 
+  
+2) Function  functional interface
+
+    return 1value apply(1 arg)
+
+3) Predicate functional interface
+
+    boolean test(1 arg)
+
+4) Supplier functional interface
+    
+     returns 1 value get()  (arg list is empty)
